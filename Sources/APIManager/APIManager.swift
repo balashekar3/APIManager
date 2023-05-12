@@ -26,8 +26,6 @@ public class APIManager:APIManagerProtocol{
             debugPrint(error.localizedDescription)
         }
     }
-}
-extension APIManager{
     
     public func createRequest(from endpoint: EndpointProtocol) throws -> URLRequest {
         var urlComponents = URLComponents()

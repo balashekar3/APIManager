@@ -28,7 +28,8 @@ public class APIManager:APIManagerProtocol{
     }
 }
 extension APIManager{
-    func createRequest(from endpoint: EndpointProtocol) throws -> URLRequest {
+    
+    public func createRequest(from endpoint: EndpointProtocol) throws -> URLRequest {
         var urlComponents = URLComponents()
         urlComponents.scheme = endpoint.scheme
         urlComponents.host = endpoint.host

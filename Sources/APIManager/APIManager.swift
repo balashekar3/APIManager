@@ -2,6 +2,8 @@ import Foundation
 
 public class APIManager:APIManagerProtocol{
     
+    public init(){}
+    
     public func getData<D>(from endpoint: EndpointProtocol, with responseModel: D.Type, completion: @escaping Handler<D>) where D : Decodable {
         do {
             let request = try createRequest(from: endpoint)

@@ -1,3 +1,3 @@
 # APIManager
 
-A description of this package.
+APIManager is an HTTP networking SPM written in Swift
